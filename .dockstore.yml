@@ -1,6 +1,7 @@
 version: 1.2
 workflows:
-  - subclass: WDL
+  - name: samtools_index
+    subclass: WDL
     primaryDescriptorPath: /samtools_index.wdl
     readMePath: /README.md
     authors:
