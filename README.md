@@ -1,2 +1,2 @@
 # samtools index WDL
- WDLization of samtools index
+ Simple WDLization of `samtools index`. Supports bam and cram files.
