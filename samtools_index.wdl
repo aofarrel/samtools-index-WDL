@@ -8,7 +8,7 @@ task samtools_index {
 		Int preemptible = 1
 		Int memory = 8
 	}
-	Int disk_size = ceil(size(bam_or_cram)) + additional_disk
+	Int disk_size = ceil(size(bam_or_cram), "GB") + additional_disk
 	
 	command <<<
 	set -eux -o pipefail
